@@ -80,7 +80,3 @@ Troubleshooting
 JAVA_HOME not set: If you encounter an error about JAVA_HOME, verify that the environment variable is correctly set and points to a valid JDK installation.
 Gradle sync fails: Ensure that your internet connection is active, as Gradle needs to download dependencies from Google and JCenter repositories.
 Build errors: Check the build.gradle files for version mismatches or missing dependencies.
-
-
-License
-Fitness App is licensed under the MIT License. See the LICENSE file for details.
