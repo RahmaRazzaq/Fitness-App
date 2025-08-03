@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".exercise">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:id="@+id/l">
+        <Button
+            android:id="@+id/bt1"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="#F6F6EB"
+            android:text="Home"
+            android:onClick="bee1Click"
+            android:textAlignment="center"
+            android:textColor="#FF487007"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/bt2"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:text="About Us"
+            android:onClick="bee2Click"
+            android:background="#F6F6EB"
+            android:textColor="#FF487007"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/bt3"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:background="#F6F6EB"
+            android:text="Contact Us"
+            android:onClick="bee3Click"
+            android:textColor="#FF487007"
+            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/imgView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/prof"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/l"
+        android:id="@+id/l1">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fit" />
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="207dp"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="Calculate Calories"
+            android:textAlignment="center"
+            android:textColor="#FF487007"
+            android:textSize="30sp"
+            android:textStyle="italic"
+            tools:ignore="MissingConstraints"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/l2"
+        android:layout_below="@+id/l1"
+        android:paddingLeft="4dp">
+
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/l3"
+            android:layout_marginTop="0dp"
+            android:text="Our application is a one stop solution for all health maintains and exercises. It has various functions like calorie’s calculation according to the user body mass index based on his/her height and weight. The user has to then enter his eating timings and routine, nutritional information about foods, BMI calculator, and information about exercises. All the food items along with the quantity and information related to calorie is shown to the user. The user can choose any food of their interest and can calculate calories according to their needs."
+            android:textAlignment="center"
+            android:textColor="#FF487007"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints" />
+        <ScrollView
+            android:layout_width="5dp"
+            android:layout_height="match_parent">
+
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

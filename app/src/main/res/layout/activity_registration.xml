@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:id="@+id/l1">
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:text="Health and Fitness"
+            android:textAlignment="center"
+            android:textColor="#487007"
+            android:textSize="45dp"
+            android:textStyle="italic"
+            android:fontFamily="serif"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="0dp"
+        android:layout_height="200dp"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:id="@+id/l2"
+        android:layout_below="@+id/l1">
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/fit"></ImageView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/l3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l2"
+        android:layout_marginTop="0dp"
+        android:paddingLeft="50dp"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/et1"
+            android:layout_width="288dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dp"
+            android:hint="Enter Email"
+            android:outlineAmbientShadowColor="#FF032522"
+            android:textAlignment="center"
+            android:textColorHint="#487007"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints" />
+        <EditText
+            android:id="@+id/et2"
+            android:layout_width="288dp"
+            android:layout_height="50dp"
+            android:hint="Enter Name"
+            android:outlineAmbientShadowColor="#FF032522"
+            android:textAlignment="center"
+            android:textColorHighlight="#FF032522"
+            android:textColorHint="#487007"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints" />
+        <EditText
+            android:id="@+id/et3"
+            android:layout_width="288dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:outlineAmbientShadowColor="#FF032522"
+            android:textAlignment="center"
+            android:textColorHint="#487007"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints" />
+        <EditText
+            android:id="@+id/et4"
+            android:layout_width="288dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:outlineAmbientShadowColor="#FF032522"
+            android:textAlignment="center"
+            android:textColorHint="#487007"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/l4"
+        android:layout_below="@+id/l3"
+        android:paddingLeft="65dp"
+        android:paddingRight="65dp">
+
+        <Button
+            android:id="@+id/bt1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="#487007"
+            android:text="Register"
+            android:onClick="btClick"
+            android:textColor="#FFFA03"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bt2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="80dp"
+            android:background="#487007"
+            android:text="cancel"
+            android:textColor="#FFFA03"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/l5"
+        android:layout_below="@+id/l4"
+        android:paddingLeft="42dp">
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/l3"
+            android:layout_marginTop="10dp"
+            android:text="Alreadry Registered?Click here to login!"
+            android:textAlignment="center"
+            android:textColor="#487007"
+            android:textSize="20sp"
+            android:onClick="onClick"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints,OnClick" />
+    </LinearLayout>
+</RelativeLayout>
